@@ -11,7 +11,7 @@ class DashboardController extends Controller
 {
     public function index(RoomService $roomService): Response
     {
-        $rooms = $roomService->getRooms();
+        $rooms = $roomService->getRooms('');
 
         return Inertia::render('Index');
     }
