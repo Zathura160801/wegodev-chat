@@ -1,4 +1,5 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
+import Settings from "@/Components/Settings";
 import { Head } from "@inertiajs/react";
 
 export default function Welcome({ auth }) {
@@ -14,7 +15,9 @@ export default function Welcome({ auth }) {
                                 <h1 className="text-white text-xl font-bold">
                                     WegodevChat
                                 </h1>
-                                <div># SETTINGS #</div>
+                                <div>
+                                    <Settings />
+                                </div>
                             </div>
                             # SEARCH #
                         </div>
